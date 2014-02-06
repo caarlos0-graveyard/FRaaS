@@ -3,6 +3,10 @@
   "version": "0.0.0",
   "description": "FakeRT as a Servuce",
   "main": "app.js",
+   "repository": {
+    "type": "git",
+    "url": "git://github.com/caarlos0/FRaaS.git"
+  },
   "dependencies": {
     "express": "~3.4.8"
   },
@@ -12,10 +16,14 @@
     "gulp": "~3.5.2",
     "jshint-stylish": "~0.1.5",
     "mocha": "~1.17.1",
-    "istanbul": "~0.2.4"
+    "istanbul": "~0.2.4",
+    "coveralls": "~2.7.1"
+  },
+  "engines": {
+    "node": ">=0.10"
   },
   "scripts": {
-    "test": "istanbul cover _mocha -- -u exports -R spec"
+    "test": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "author": "Carlos Alexandro Becker",
   "license": "MIT"
