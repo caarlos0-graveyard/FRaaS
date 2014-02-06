@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fake RT as a Service</title>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Fake RT as a Service</h1>
+    <hr>
+    <form id="rt-form" onsubmit="return false">
+        <div class="input-group">
+          <input type="text" size="30" autofocus
+            placeholder="Insira o username do seu amigo..."
+            class="input-lg form-control">
+          <span class="input-group-btn">
+            <input class="btn btn-primary btn-lg" type="submit" value="Random RT">
+          </span>
+        </div>
+      </form>
+  </div>
+  <script>
+    var form = document.querySelector('form')
+    form.addEventListener("submit", function (e) {
+      window.location.pathname = form.querySelector('input').value
+      return false
+    } , false);
+  </script>
+</body>
+</html>

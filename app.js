@@ -9,6 +9,10 @@ app.engine('mustache', mustacheExpress());
 app.set('view engine', 'mustache');
 app.set('views', __dirname + '/views');
 
+app.get('/', function (req, res) {
+  res.render('index')
+})
+
 app.get('/:user', function (req, res) {
   var user = req.params.user,
     rt = provider.random(user)
