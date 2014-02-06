@@ -3,19 +3,16 @@ var fs = require('fs'),
   mocha = require('gulp-mocha'),
   jshint = require('gulp-jshint'),
   jshintOptions = JSON.parse(fs.readFileSync('.jshintrc', 'utf8'))
-  // livereload = require('gulp-livereload'),
-  // lr = require('tiny-lr'),
-  // server = lr()
 
 gulp.task('lint', function () {
-  gulp.src(['*.js', 'lib/*.js', 'spec/*.js'])
-  .pipe(jshint(jshintOptions))
-  .pipe(jshint.reporter('jshint-stylish'))
+  gulp.src(['*.js', 'lib/*.js', 'test/*.js'])
+    .pipe(jshint(jshintOptions))
+    .pipe(jshint.reporter('jshint-stylish'))
 })
 
 gulp.task('test', function () {
-  gulp.src('spec/*.js')
-  .pipe(mocha())
+  gulp.src('test/*.js')
+    .pipe(mocha())
 })
 
 gulp.task('default', function () {

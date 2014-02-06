@@ -7,8 +7,6 @@
     "express": "~3.4.8"
   },
   "devDependencies": {
-    "tiny-lr": "0.0.5",
-    "gulp-livereload": "~1.0.1",
     "gulp-mocha": "~0.4.1",
     "gulp-jshint": "~1.4.0",
     "gulp": "~3.5.2",
@@ -16,7 +14,7 @@
     "mocha": "~1.17.1"
   },
   "scripts": {
-    "test": "mocha spec/*.js"
+    "test": "mocha"
   },
   "author": "Carlos Alexandro Becker",
   "license": "MIT"
