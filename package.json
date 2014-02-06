@@ -12,10 +12,11 @@
     "gulp-mocha": "~0.4.1",
     "gulp-jshint": "~1.4.0",
     "gulp": "~3.5.2",
-    "jshint-stylish": "~0.1.5"
+    "jshint-stylish": "~0.1.5",
+    "mocha": "~1.17.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha spec/*.js"
   },
   "author": "Carlos Alexandro Becker",
   "license": "MIT"
