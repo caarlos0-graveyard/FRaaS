@@ -1,0 +1,22 @@
+{
+  "name": "fraas",
+  "version": "0.0.0",
+  "description": "FakeRT as a Servuce",
+  "main": "app.js",
+  "dependencies": {
+    "express": "~3.4.8"
+  },
+  "devDependencies": {
+    "tiny-lr": "0.0.5",
+    "gulp-livereload": "~1.0.1",
+    "gulp-mocha": "~0.4.1",
+    "gulp-jshint": "~1.4.0",
+    "gulp": "~3.5.2",
+    "jshint-stylish": "~0.1.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carlos Alexandro Becker",
+  "license": "MIT"
+}
