@@ -1,4 +1,9 @@
 language: node_js
 node_js:
-  - "0.11"
-  - "0.10"
+- '0.11'
+- '0.10'
+deploy:
+  app: fraas
+  provider: heroku
+  api_key:
+    secure: fGpdfldwsFHWKGsvJBrnU1NlNmLFIkwshELzPxN65myC9ilvxMZ94sf/9ECdv7Y5Ap+LPSYNYwZqB5wsjjfCoQrYV6YchmLmapHSEH3ktyPZnNtiMuDgA3yPWOeu+IGpB5QoeZq+MDrBusN6c8hGRCt5uNL8xOqsgPmtGVGq8Ik=
