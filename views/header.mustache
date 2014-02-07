@@ -1,4 +1,12 @@
 <header>
-  <h1><a href="/">Fake RT as a Service</a></h1>
+  <h1>
+    <a href="/">Fake RT as a Service</a>
+    {{#user}}
+      <a href="/{{ user }}" id="" class="btn btn-link btn-lg pull-right"
+        title="Clique para ver outro tweet.">
+        <i class="fa fa-refresh fa-lg"></i>
+      </a>
+    {{/user}}
+  </h1>
 </header>
 <hr>
