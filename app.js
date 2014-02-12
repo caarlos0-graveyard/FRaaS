@@ -16,7 +16,7 @@ app.get('/', function (req, res) {
 app.get('/:user', function (req, res) {
   var user = req.params.user,
     rt = provider.random(user)
-  res.render('rt', {user: user, rt: rt})
+  res.render('rt', {user: user, rt: rt, encRt: encodeURIComponent(rt) })
 })
 
 app.listen(process.env.PORT || 4567)
