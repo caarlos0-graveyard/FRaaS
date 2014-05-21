@@ -1,4 +1,4 @@
-[FRaaS][fraas] [![Build Status](https://travis-ci.org/caarlos0/FRaaS.png?branch=master)](https://travis-ci.org/caarlos0/FRaaS)[![Code Climate](https://codeclimate.com/github/caarlos0/FRaaS.png)](https://codeclimate.com/github/caarlos0/FRaaS)[![Coverage Status](https://coveralls.io/repos/caarlos0/FRaaS/badge.png?branch=master)](https://coveralls.io/r/caarlos0/FRaaS?branch=master)
+[FRaaS][fraas] [![Build Status](http://img.shields.io/travis/caarlos0/FRaaS/master.svg?style=flat)](https://travis-ci.org/caarlos0/FRaaS)[![Code Climate](http://img.shields.io/codeclimate/github/caarlos0/FRaaS.svg?style=flat)](https://codeclimate.com/github/caarlos0/FRaaS)[![Coverage Status](http://img.shields.io/coveralls/caarlos0/FRaaS/master.svg?style=flat)](https://coveralls.io/r/caarlos0/FRaaS?branch=master)
 =====
 
 [Fake RT as a Service (FRaaS)][fraas] is a service to provide fake
