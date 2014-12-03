@@ -5,4 +5,4 @@ deploy:
   app: fraas
   provider: heroku
   api_key:
-    secure: fGpdfldwsFHWKGsvJBrnU1NlNmLFIkwshELzPxN65myC9ilvxMZ94sf/9ECdv7Y5Ap+LPSYNYwZqB5wsjjfCoQrYV6YchmLmapHSEH3ktyPZnNtiMuDgA3yPWOeu+IGpB5QoeZq+MDrBusN6c8hGRCt5uNL8xOqsgPmtGVGq8Ik=
+    secure: BOdJQtG5satUepBTNql4EW4cxrTfYUu1jSVw60b4vJ1tg+xXYyj3/gcFJmmr06yPZp3OZ+sFLvncKBnphjGgYeChzTnNyGB3i96BVEgu7T0Hj0h0N5wKMDJn7dkVkMaRhwk9stz4OcSFN4UBZkfJrtuRJ1+ztYFhk+hGPF0wWRc=
