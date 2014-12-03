@@ -8,8 +8,12 @@
       <p>{{ rt }}</p>
     </blockquote>
     <a class="btn btn-primary btn-lg" target="_blank"
-      href="https://twitter.com/intent/tweet?text={{ encRt }} - http://goo.gl/r1QpNG">
+      href="https://twitter.com/intent/tweet?text={{ encRt }} http://goo.gl/r1QpNG">
       <i class="fa fa-twitter"></i> Tweetar
+    </a>
+    <a class="btn btn-link"
+      href="/{{ user }}/{{ id }}">
+      Permalink
     </a>
     {{> footer}}
   </div>

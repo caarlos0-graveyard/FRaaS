@@ -10,16 +10,20 @@ app.set('view engine', 'mustache')
 app.set('views', __dirname + '/views')
 
 app.get('/', function (req, res) {
+  console.log('GET /')
   res.render('index')
 })
 
-app.get('/:user', function (req, res) {
+app.get('/:user/:id?', function (req, res) {
+  console.log('GET /:user/:id?')
   var user = req.params.user,
-    rt = provider.random(user)
+    rtId = req.params.id,
+    rt = rtId ? provider.find(rtId) : provider.random(user)
   res.render('rt', {
     user: user,
-    rt: rt,
-    encRt: encodeURIComponent(rt)
+    rt: rt.text,
+    id: rt.id,
+    encRt: encodeURIComponent('RT @' + user + ': ' + rt.text)
   })
 })
 
