@@ -13,10 +13,25 @@ describe('RTProvider', function () {
       assert.equal(typeof provider.random, 'function')
     })
 
-    it('should return something', function () {
-      var rt = provider.random('a')
-      assert(rt.length > 0)
-      assert(rt !== 'RT a:')
+    it('should return a valid rt', function () {
+      var rt = provider.random()
+      assert(rt !== null)
+      assert(rt.text.length > 0)
+      assert(rt.id > -1)
+    })
+  })
+
+  describe('#find', function () {
+    var provider = new RTProvider()
+    it('should be a function', function () {
+      assert.equal(typeof provider.find, 'function')
+    })
+
+    it('should return a valid rt', function () {
+      var rt = provider.find(1)
+      assert(rt !== null)
+      assert(rt.text.length > 0)
+      assert(rt.id === 1)
     })
   })
 })

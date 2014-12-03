@@ -8,17 +8,17 @@
     "url": "git://github.com/caarlos0/FRaaS.git"
   },
   "dependencies": {
-    "express": "~3.4.8",
-    "mustache-express": "~1.0.0"
+    "express": "~4.10.4",
+    "mustache-express": "~1.2.0"
   },
   "devDependencies": {
-    "gulp-mocha": "~0.4.1",
-    "gulp-jshint": "~1.4.0",
-    "gulp": "~3.5.2",
-    "jshint-stylish": "~0.1.5",
-    "mocha": "~1.17.1",
-    "istanbul": "~0.2.4",
-    "coveralls": "~2.7.1"
+    "gulp-mocha": "~1.1.0",
+    "gulp-jshint": "~1.0.0",
+    "gulp": "~3.8.8",
+    "jshint-stylish": "~1.0.0",
+    "mocha": "~2.0.1",
+    "istanbul": "~0.3.2",
+    "coveralls": "~2.11.2"
   },
   "engines": {
     "node": ">=0.10"
